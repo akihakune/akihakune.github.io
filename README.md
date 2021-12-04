@@ -1,4 +1,3 @@
-# My backup blog website
+# FreshStart - Minimalism Start page for productivity
 
-To safely store, and to blow the cobwebs on my blogs away.
-In general, you are allowed to do everything with this repo, as long as you credit me (as you should).
+FreshStart is a minimal start page, customized to maximize your Internet-work productivity. It's built with Hugo.

@@ -1,142 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="referrer" content="strict-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <title>Categories | Hakune Blog</title>
+  <title>Categories &middot; FreshStart</title>
+  
+  <meta name="description" content="rfranzen.com" />
+   <link rel="icon" href="/favicon.ico" /> 
 
-  <meta charset="UTF-8">
-  <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Categories" />
-  <meta name="twitter:description" content=""/>
-  <meta name="twitter:site" content="@akihakune" />
-  <meta name="twitter:creator" content="https://twitter.com/akihakune" />
-  
-
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-
-
-  
-  
-    
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/posts.min.6f094aad28695152161dc4239215c000816bd099408da6cc65a37f9fb7194925.css" integrity="sha256-bwlKrShpUVIWHcQjkhXAAIFr0JlAjabMZaN/n7cZSSU="/>
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
-  
-  
-   
-  <link rel="alternate" type="application/rss+xml+xml" href="https://git-akihakune.github.io/categories/index.xml" title="Hakune Blog" /> 
-   
-   
-    
-
-<script type="application/ld+json">
-  
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "https:\/\/git-akihakune.github.io\/categories\/",
-      "name": "Categories",
-      "author": {
-        "@type": "Person",
-        "name": ""
-      },
-      "description": ""
-    }
-  
-  </script>
+  <link rel="stylesheet" href="https://akihakune.github.iocss/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
-
 <body>
-  <div class="burger__container">
-  <div class="burger" aria-controls="navigation" aria-label="Menu">
-    <div class="burger__meat burger__meat--1"></div>
-    <div class="burger__meat burger__meat--2"></div>
-    <div class="burger__meat burger__meat--3"></div>
-  </div>
-</div>
- 
+<header>
+  <nav>
+    <div class="nav-left">
+      <ul>
+        
+        <li><a href="https://mail.google.com" title="Gmail"><i class="fas fa-envelope red"></i></a></li>
+        
+        <li><a href="https://twitter.com" title="Twitter"><i class="fab fa-twitter aqua"></i></a></li>
+        
+        <li><a href="https://www.facebook.com/notifications" title="Facebook"><i class="fab fa-facebook blue"></i></a></li>
+        
+        <li><a href="https://www.messenger.com/" title="messenger"><i class="fab fa-facebook-messenger purple"></i></a></li>
+        
+        <li><a href="https://www.youtube.com/feed/library" title="Youtube"><i class="fab fa-youtube red"></i></a></li>
+        
+        <li><a href="https://discord.com/app" title="Discord"><i class="fab fa-discord"></i></a></li>
+        
+        <li><a href="https://www.reddit.com/" title="Reddit"><i class="fab fa-reddit orange"></i></a></li>
+        
+      </ul>
+    </div>
+    <div class="nav-right">
+      <ul class="datetime">
+        <li class="date">
+          <i class="far fa-calendar"></i>&nbsp;
+          <span id="current_date"></span>
+        </li>
+        <li class="time">
+          <i class="far fa-clock"></i>&nbsp;
+          <span id="current_time"></span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+    </main><script>
+  var timer = setInterval(function() {
+    localTimer();
+  }, 1000);
 
-  <nav class="nav" id="navigation">
-  <ul class="nav__list">
-    
-    
-      <li>
-        <a  href="/">about</a>
-      </li>
-    
-      <li>
-        <a  href="/blog">blog</a>
-      </li>
-    
-  </ul>
-</nav>
+  function addZero(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
 
+  function localTimer() {
+    var today = new Date();
+    var time = addZero(today.getHours()) + ":" + addZero(today.getMinutes()) + ":" + addZero(today.getSeconds());
+    document.getElementById("current_time").innerHTML = time;
 
-  <main>
-    
-    
-    
-
-<div class="post-list__container">
-  <ul class="post-list">
-    
-  </ul>
-  <ul class="tags__list">
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/algorithm/">algorithm (1)</a>
-  </li>
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/ctf/">ctf (3)</a>
-  </li>
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/data-structure/">data-structure (1)</a>
-  </li>
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/english/">english (4)</a>
-  </li>
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/programming/">programming (1)</a>
-  </li>
-  
-  <li class="tag__item">
-    <a class="tag__link" href="/tags/tech/">tech (4)</a>
-  </li>
-  
-</ul>
-
-</div>
+    var date = today.getDate()+' . '+(today.getMonth()+1)+' . '+today.getFullYear();
+    document.getElementById("current_date").innerHTML = date;
+}
+</script>
 
 
-  </main>
-
-   
-
-  
-  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
-   
 </body>
-
 </html>
